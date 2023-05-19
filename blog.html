@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>my-IT_Journey</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navbar">
+        <h1>my-IT<span class="secondLogoText">_Journey</span></h1>
+        <ul class="dextopMenu">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./about.html">About</a></li>
+          <li><a href="./education.html">Education</a></li>
+          <li><a href="./experience.html">Experience</a></li>
+          <li><a href="./skill.html">Skills</a></li>
+          <li><a href="./project.html">Projects</a></li>
+          <li><a href="./blog.html">Blog</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+        </ul>
+        <!-- Hamburgur -->
+        <i onclick="openNav()" class="hamburgur">
+          <img src="./images/menu.png" alt="loading" />
+        </i>
+        <!-- Mobile Menu -->
+        <ul class="mobileMenu" id="mobileNavLinks">
+          <i onclick="closeNav()" class="close">
+            <img src="./images/close.png" alt="loading" />
+          </i>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./about.html">About</a></li>
+          <li><a href="./education.html">Education</a></li>
+          <li><a href="./experience.html">Experience</a></li>
+          <li><a href="./skill.html">Skills</a></li>
+          <li><a href="./project.html">Projects</a></li>
+          <li><a href="./blog.html">Blog</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section class="blogSection">
+      <h1>Blogs</h1>
+      <p>Have a look at some of the blogs that I have written.</p>
+      <div class="blogSectionWrapper">
+        <div class="blogContainer">
+          <div class="blog">
+            <h1 class="heading">Difference b/w WEB 2.0 and WEB 3.0</h1>
+            <div>
+              <img src="./images/web.jpg" alt="loading" />
+            </div>
+            <p>
+              Web 2.0 is characterized by user-generated content, social media,
+              and web applications that enable collaboration and interaction
+              among users. In contrast, Web 3.0 (also known as the Semantic Web)
+              is focused on creating a more intelligent web, where data is
+              structured in a way that machines can understand and process,
+              leading to more personalized and efficient experiences for users.
+              It is also expected to involve technologies like artificial
+              intelligence, blockchain, and decentralized networks.
+            </p>
+          </div>
+          <div class="blog">
+            <h1 class="heading">React Vs Angular</h1>
+            <div>
+              <img src="./images/react.jpg" alt="loading" />
+            </div>
+            <p>
+              React is a JavaScript library for building user interfaces that
+              emphasizes component-based architecture and virtual DOM. It allows
+              for easy integration with other libraries and frameworks. Angular,
+              on the other hand, is a full-fledged framework for building web
+              applications with a strong emphasis on dependency injection,
+              two-way data binding, and a comprehensive set of features. It
+              comes with a lot of built-in tools and can be used to build
+              large-scale enterprise applications.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- JavaScript to toggle the hamburgur icon -->
+    <script>
+      function openNav() {
+        let navbarLinks = document.getElementById("mobileNavLinks");
+        navbarLinks.style.display = "flex";
+      }
+      function closeNav() {
+        let navbarLinks = document.getElementById("mobileNavLinks");
+        navbarLinks.style.display = "none";
+      }
+    </script>
+  </body>
+</html>

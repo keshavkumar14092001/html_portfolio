@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>my-IT_Journey</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navbar">
+        <h1>my-IT<span class="secondLogoText">_Journey</span></h1>
+        <ul class="dextopMenu">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./about.html">About</a></li>
+          <li><a href="./education.html">Education</a></li>
+          <li><a href="./experience.html">Experience</a></li>
+          <li><a href="./skill.html">Skills</a></li>
+          <li><a href="./project.html">Projects</a></li>
+          <li><a href="./blog.html">Blog</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+        </ul>
+        <!-- Hamburgur -->
+        <i onclick="openNav()" class="hamburgur">
+          <img src="./images/menu.png" alt="loading" />
+        </i>
+        <!-- Mobile Menu -->
+        <ul class="mobileMenu" id="mobileNavLinks">
+          <i onclick="closeNav()" class="close">
+            <img src="./images/close.png" alt="loading" />
+          </i>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./about.html">About</a></li>
+          <li><a href="./education.html">Education</a></li>
+          <li><a href="./experience.html">Experience</a></li>
+          <li><a href="./skill.html">Skills</a></li>
+          <li><a href="./project.html">Projects</a></li>
+          <li><a href="./blog.html">Blog</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section class="contactSection">
+      <h1>Contact Me</h1>
+      <p>Feel free for reaching out to me for anything.</p>
+      <form>
+        <input type="text" placeholder="Enter your name!" required />
+        <input type="email" placeholder="Enter your email address!" required />
+        <input type="text" placeholder="Enter your major!" required />
+        <textarea
+          rows="10"
+          placeholder="Type your message!"
+          required
+        ></textarea>
+        <button>Submit</button>
+      </form>
+    </section>
+
+    <!-- JavaScript to toggle the hamburgur icon -->
+    <script>
+      function openNav() {
+        let navbarLinks = document.getElementById("mobileNavLinks");
+        navbarLinks.style.display = "flex";
+      }
+      function closeNav() {
+        let navbarLinks = document.getElementById("mobileNavLinks");
+        navbarLinks.style.display = "none";
+      }
+    </script>
+  </body>
+</html>

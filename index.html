@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>my-IT_Journey</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navbar">
+        <h1>my-IT<span class="secondLogoText">_Journey</span></h1>
+        <ul class="dextopMenu">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./about.html">About</a></li>
+          <li><a href="./education.html">Education</a></li>
+          <li><a href="./experience.html">Experience</a></li>
+          <li><a href="./skill.html">Skills</a></li>
+          <li><a href="./project.html">Projects</a></li>
+          <li><a href="./blog.html">Blog</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+        </ul>
+        <!-- Hamburgur -->
+        <i onclick="openNav()" class="hamburgur">
+          <img src="./images/menu.png" alt="loading" />
+        </i>
+        <!-- Mobile Menu -->
+        <ul class="mobileMenu" id="mobileNavLinks">
+          <i onclick="closeNav()" class="close">
+            <img src="./images/close.png" alt="loading" />
+          </i>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./about.html">About</a></li>
+          <li><a href="./education.html">Education</a></li>
+          <li><a href="./experience.html">Experience</a></li>
+          <li><a href="./skill.html">Skills</a></li>
+          <li><a href="./project.html">Projects</a></li>
+          <li><a href="./blog.html">Blog</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section class="homeSection">
+      <div class="homeContainer">
+        <div class="homeContainerContent">
+          <div>
+            <p class="firstP">Hi, my name is</p>
+            <h1>Naveen Reddy</h1>
+            <h2>I'm a Full Stack Developer.</h2>
+            <p class="secondP">
+              I'm a full-stack developer with expertise in building
+              comprehensive websites. I possess a deep understanding of both
+              front-end and back-end technologies. With my skill set, I can
+              develop high-quality websites that offer seamless user
+              experiences, robust functionality, and scalable architecture. From
+              designing the user interface to developing the database and
+              server-side logic, I have the experience and expertise to create
+              custom solutions that meet clients' needs. Whether it's creating a
+              simple landing page or a complex web application, I have the
+              skills and experience to bring your project to life.
+            </p>
+            <a class="homeBtn" href="./project.html">View Work</a>
+          </div>
+        </div>
+        <div class="homeContainerImage">
+          <img src="./images/homeBG.jpg" alt="loading" />
+        </div>
+      </div>
+    </section>
+
+    <!-- JavaScript to toggle the hamburgur icon -->
+    <script>
+      function openNav() {
+        let navbarLinks = document.getElementById("mobileNavLinks");
+        navbarLinks.style.display = "flex";
+      }
+      function closeNav() {
+        let navbarLinks = document.getElementById("mobileNavLinks");
+        navbarLinks.style.display = "none";
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>my-IT_Journey</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navbar">
+        <h1>my-IT<span class="secondLogoText">_Journey</span></h1>
+        <ul class="dextopMenu">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./about.html">About</a></li>
+          <li><a href="./education.html">Education</a></li>
+          <li><a href="./experience.html">Experience</a></li>
+          <li><a href="./skill.html">Skills</a></li>
+          <li><a href="./project.html">Projects</a></li>
+          <li><a href="./blog.html">Blog</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+        </ul>
+        <!-- Hamburgur -->
+        <i onclick="openNav()" class="hamburgur">
+          <img src="./images/menu.png" alt="loading" />
+        </i>
+        <!-- Mobile Menu -->
+        <ul class="mobileMenu" id="mobileNavLinks">
+          <i onclick="closeNav()" class="close">
+            <img src="./images/close.png" alt="loading" />
+          </i>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./about.html">About</a></li>
+          <li><a href="./education.html">Education</a></li>
+          <li><a href="./experience.html">Experience</a></li>
+          <li><a href="./skill.html">Skills</a></li>
+          <li><a href="./project.html">Projects</a></li>
+          <li><a href="./blog.html">Blog</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section class="aboutSection">
+      <div class="aboutContainer">
+        <div class="contentContainer">
+          <div class="contentleftContainer">
+            <h1>About Me</h1>
+            <p>Hi. I'm Naveen, nice to meet you. Please have a look around</p>
+          </div>
+          <div class="contentRightContainer">
+            <p>
+              I have a strong interest in developing websites and am curious to
+              know how great websites are made. Despite the difficulties, I'm
+              committed to developing my skills as a web developer and like the
+              learning process. I approach new technology with curiosity and
+              openness, and I'm constantly trying to broaden my skill set. I am
+              a quick learner who enjoys stepping outside of my comfort zone. I
+              cherish cooperation and teamwork, but I am also capable of taking
+              the initiative when necessary. I am eager to embrace the chances
+              and challenges of this industry and have a drive to learn more
+              about new technology and possibilities.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- JavaScript to toggle the hamburgur icon -->
+    <script>
+      function openNav() {
+        let navbarLinks = document.getElementById("mobileNavLinks");
+        navbarLinks.style.display = "flex";
+      }
+      function closeNav() {
+        let navbarLinks = document.getElementById("mobileNavLinks");
+        navbarLinks.style.display = "none";
+      }
+    </script>
+  </body>
+</html>
